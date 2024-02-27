@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav {
+  width: 100%;
+}
+
+nav header {
+  text-transform: capitalize;
+  font-size: 3em;
+}
+
+nav ul {
+  background-color: azure;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0.5em 3em;
+  background-color: brown;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  max-width: 968px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  background-color: bisque;
+  border-radius: 5vh;
+  margin: 2rem;
+}
+
+section header {
+  width: 100%;
+  background-color: brown;
+  border-radius: 5vh 5vh 0 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+section .main-section-content {
+  padding: 1rem 2rem;
+}
+
+.main-section-content p:first-of-type::before {
+  content: "What was it about?: ";
+  font-weight: bold;
+}
+
+.main-section-content p:last-of-type::before {
+  content: "How to recognize it?: ";
+  font-weight: bold;
+}
+
+.main-section-content code {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.3em;
+  display: inline-block;
+  background-color: aliceblue;
+}
+
+.main-section-content code::before {
+  content: "Examples: ";
+  font-weight: bold;
+}
+
+.main-section-content li:first-of-type::before {
+  content: "Historical context: ";
+  font-weight: bold;
+}
+
+.main-section-content li:last-of-type::before {
+  content: "Role of art on society: ";
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    padding: 0;
+  }
+  nav li {
+    display: block;
+    padding: 0.5em 3em;
+    background-color: brown;
+  }
+}
